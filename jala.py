@@ -84,12 +84,14 @@ def primProf(ini,meta,proble):
 def main(ini,meta):
     
     proble={ 
-        'A':['B','C','D'], 
-        'B':['A','C','E'], 
-        'C':['A','B','D','E'], 
-        'D':['A','C','F'], 
-        'E': [ 'B','C','F'], 
-        'F':[ 'D','E']
+        'A':['B','D','E'], 
+        'B':['A','C','F'], 
+        'C':['B','D','F','G'], 
+        'D':['A','C','E','G'], 
+        'E':['A','D','G'], 
+        'F':['B','C','G','H'],
+        'G':['C','D','E','F'],
+        'H':['F']
     }
     
     Cerrados = primAmp(ini,meta,proble)
